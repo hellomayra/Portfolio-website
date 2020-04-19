@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">    
 <head>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta charset="utf-8">
-    <title> About Mayra Recio</title>
+	<title> About Mayra Recio </title>
 	<link rel="icon" href="img/logo/mayrarecio_logo_short.png" type="image/png" sizes="16x16 32x32">
+
 </head>
 <body>
-	
+
 	<div>
 		<header>
-			<a href="index.html">
-			<img src="img/logo/mayrarecio_logo.svg" alt="Logo Mayra Recio" class="logo">
+			<nav class="navbar navbar-light navbar-expand justify-content-between">
+				<a class="navbar-brand" href="index.html">
+				<img src="img/logo/mayrarecio_logo.svg" alt="Logo Mayra Recio" class="logo">
 			</a>
-			<nav>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="nav-item">
+				  <a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="youelearn.html">Work</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				  </li>
+			  </ul>
+			<!-- </nav>
 				<a href="index.html">Home</a>
 				<a href="youelearn.html">Work</a>
 				<a href="about.html">About</a>
 				<a href="contact.html">Contact</a>
-			</nav>
+			</nav> -->
 		</header>
 	</div>
-	
 	<main>
-		<div class="container">
+		<div><div class="container-title">
 		<div style="text-align:center">
 		<h1>About</h1> 
 		</div>
 		</div>
 	</main>
 	
-	<section>
-		<div>
-			<div>
-				<picture>
-                    <img src=img/mayra/DSC_5862.jpg alt="Profile Picture Mayra Recio" style="width:400px;height:533px;">
-				</picture> 
-			</div>
-			<div>
+	<div class="container">
+
+		<!-- Responsive Grid with Images -->
+        <p>
+        <div class="row">
+            <div class="col-md">
+                <img src="img/mayra/DSC_5862.jpg" style="width:383px">
+                
+            </div>
+            <div class="col-md">
 				<h3>Hi, I’m Mayra Recio</h3>
                 <p> I’m a UX designer based in Zurich, Switzerland.</p>
                 
@@ -51,10 +70,34 @@
                 
                 <p>I’m passionate about participating in each phase of the design process from discovery, visual design strategy to implementation and user testing.</p>
                 
-                <p>Always up for a coffee or chat.</p>
+				<p>Always up for a coffee or chat.</p>
+				
+				<a href="files/cv/CV_Mayra_Recio.pdf" class="button">View CV</a>
+
+                
+            </div>
+		 </div>
+		 
+
+	<!-- <section>
+		<div>
+			<div>
+				<picture>
+                    <img src=img/mayra/DSC_5862.jpg alt="Profile Picture Mayra Recio" style="width:400px;height:533px;">
+				</picture> 
+			</div> -->
+			<!-- <div>
+				<h3>Hi, I’m Mayra Recio</h3>
+                <p> I’m a UX designer based in Zurich, Switzerland.</p>
+                
+                <p>My key competencies are UX Research, UI Prototyping and Interaction design. With my Business Administration - Marketing background I know how to help ensure the user needs are aligned with the business goals.</p>
+                
+                <p>I’m passionate about participating in each phase of the design process from discovery, visual design strategy to implementation and user testing.</p>
+                
+                <p>Always up for a coffee or chat.</p> -->
 				
                 <!-- <a href="">See full Story</a> -->
-				<a href="files/cv/CV_Mayra_Recio.pdf" class="button">View CV</a>
+				
 			</div>
 		</div>
 	</section>

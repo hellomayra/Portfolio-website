@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">    
 <head>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,15 +15,34 @@
 
 </head>
 <body>
+
 	<div>
 		<header>
-			<a href="index.html">
+			<nav class="navbar navbar-light navbar-expand justify-content-between">
+				<a class="navbar-brand" href="index.html">
 				<img src="img/logo/mayrarecio_logo.svg" alt="Logo Mayra Recio" class="logo">
 			</a>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="nav-item">
+				  <a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="youelearn.html">Work</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				  </li>
+			  </ul>
+			<!-- </nav>
 				<a href="index.html">Home</a>
 				<a href="youelearn.html">Work</a>
 				<a href="about.html">About</a>
 				<a href="contact.html">Contact</a>
+			</nav> -->
 		</header>
 	</div>
 	
@@ -32,41 +54,33 @@
 		</div>
 	</main>
 	
-	<section>
-		<div>
-			<div>
-				<picture>
-                    <img src=img/work/youelearn.jpg alt="youelearn - Mobile App" class=home-picture>
-				</picture>
-			</div>
-			<div>
+	<div class="container">
+
+		<!-- Responsive Grid with Images -->
+        <p>
+			<h4> PROJECTS </h4></p>
+        <div class="row">
+            <div class="col-md">
 				<h3>Elearning - A Mobile App</h3>
 				<p> A one-to-one learning platform that helps students solve their doubts in any subject.</p>
 				
 				<p>Tools used: AdobeXD, Photoshop, Illustrator</p>
 				<a href=youelearn.html>Read more</a>
-			</div>
-		</div>
-	</section>
+                <img src="img/work/youelearn.jpg" class="w-100">
+                
+            </div>
+            <div class="col-md">
+				<h3>Labeye</h3>
+				<p> Redesign of Labeye page for Web and Mobile (Responsive).</p>
+				
+				<p>Tools used: AdobeXD, Photoshop, Illustrator Wordpress</p>
+				<a href="#">Read more</a>
+                <img src="img/work/labeye.jpg" class="w-100">
+                
+            </div>
+    	 </div>
+
 		
-		<section>
-			<div>
-				<div>
-					<picture>
-						<img src=img/work/labeye.jpg alt="Labeye - Website redesign">
-					</picture> 
-				</div>
-					
-					<div>
-						<h3>Labeye</h3>
-						<p> Redesign of Labeye page for web and mobile (responsive).</p>
-						
-						<p>Tools used: AdobeXD, Photoshop, Illustrator, Wordpress </p>
-						<a href="">Read more</a>
-						
-					</div>
-				</div>
-			</section>
 			<footer>
 				<h2>Get in Touch</h2>
 				<p>

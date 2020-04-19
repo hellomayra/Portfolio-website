@@ -26,6 +26,11 @@ img {
     width: 100%;
 }
 
+.img-work
+{
+  width: 400px;
+}
+
 .logo{
     width: 200px;
 }
@@ -36,7 +41,7 @@ h1, h2, h3, h4 {
     color: #384457;
 }
 h1 {
-    font-size: 3.75em;
+    font-size: 2.75em;
     font-weight: 700;
 }
 
@@ -100,8 +105,12 @@ h4 {
     background-color: #ffffff;
     padding: 300px 5px 300px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
     width: 100%;
-
-
+  }
+  .container-title {
+      border-radius: 5px;
+      background-color: #ffffff;
+      padding: 166px 5px 70px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+      width: 100%;
   }
   
   /* Create two columns that float next to eachother */
