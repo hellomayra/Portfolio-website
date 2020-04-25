@@ -1,3 +1,29 @@
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+header {
+  text-align: unset;
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
+
+
+
 * {
     box-sizing: border-box;
   }
@@ -9,14 +35,15 @@ header {
     display:inline-block;
     width: 100%;
     box-shadow: 0px 2px 8px 0px rgba(56, 56, 56, 0.05);
-    position: fixed
+    position: fixed;
+    z-index: 1;
 
 }
 
 body {
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px; /* Sets the font size to 16px */
+    font-size: 18px; /* Sets the font size to 18px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #384457;
@@ -71,6 +98,8 @@ h4 {
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+    transition-duration: 0.2s;
+    transition-property: opacity;
   }
   
   .button:hover {
@@ -135,3 +164,17 @@ h4 {
       margin-top: 0;
     }
   }
+
+  @keyframes color-change {
+    0% {fill: #55A9A4;}
+    50% {fill: #385651;}
+    100% {fill: #384457;}
+  }
+
+  .bird {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
