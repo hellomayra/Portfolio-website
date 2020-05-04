@@ -1,12 +1,12 @@
+console.log('Hi! Welcome to My Portfolio Site');
 
-
-console.log("Hi! Welcome to My Portfolio Site");
-
-function menuToggle() {
-    var x = document.getElementById('navbar-nav');
-    if (x.className === "navbar-nav") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar-nav";
-      }
+(function($) {
+  $('.hamburger').click(function() {
+    var x = $('#navbar');
+    if ($('#navbar').hasClass('responsive')) {
+      $('#navbar').removeClass('responsive');
+    } else {
+      $('#navbar').addClass('responsive');
     }
+  });
+})($);

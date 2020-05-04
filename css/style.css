@@ -1,6 +1,13 @@
 .nav li:not(:last-child) {
   display: none;
 }
+.responsive .navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+.responsive .nav li:not(:last-child) {
+  display: list-item;
+}
 
 @media only screen and (min-width: 641px) {
   /* Show Menu List in Large Screen */
@@ -8,7 +15,7 @@
     display: list-item;
   }
   /* Hide Burger Menu in large Screen */
-  .hamburguer {
+  .hamburger {
     display: none;
   }
 
@@ -17,18 +24,15 @@
   }
 }
 
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  
 }
 /* ==============================
 Extra-large devices (1920px or larger)
@@ -36,48 +40,47 @@ Extra-large devices (1920px or larger)
 @media only screen and (min-width: 1920px) {
 }
 
-
-
 header {
-    background-color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    display:inline-block;
-    width: 100%;
-    box-shadow: 0px 2px 8px 0px rgba(56, 56, 56, 0.05);
-    position: fixed;
-    z-index: 1;
-
+  background-color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0px 2px 8px 0px rgba(56, 56, 56, 0.05);
+  position: fixed;
+  z-index: 1;
 }
 
 body {
-    background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px; /* Sets the font size to 18px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #384457;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; /* Sets the font size to 18px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #384457;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
-.img-work
-{
+.img-work {
   width: 400px;
 }
 
-.logo{
-    width: 200px;
+.logo {
+  width: 200px;
 }
 
-h1, h2, h3, h4 {
-    line-height: 1.4;
-    font-family: 'Heebo', sans-serif;
-    color: #384457;
-    font-weight: 500;
-/* }
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+  font-family: 'Heebo', sans-serif;
+  color: #384457;
+  font-weight: 500;
+  /* }
 h1 {
     font-size: 2.75em;
     font-weight: 700;
@@ -104,93 +107,101 @@ h4 {
 }
 
 .hamburguer {
-  padding: 8px; 
+  padding: 8px;
 }
 
 .button {
-    background-color: #DB7966;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    transition-duration: 0.2s;
-    transition-property: opacity;
-  }
-  
-  .button:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
-  }
-  
+  background-color: #db7966;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
 @media screen and (min-width: 520px) {
-    .home-picture{
-        width: 50%;
-    }
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-  
-  /* Style inputs */
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    background-color: #f2f2f280;
-    border: 1px solid;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  /* Style the container/contact section */
-  .container-hero {
-    border-radius: 5px;
-    background-color: #ffffff;
-    padding: 300px 5px 300px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
-    width: 100%;
-  }
-  .container-title {
-      border-radius: 5px;
-      background-color: #ffffff;
-      padding: 166px 5px 70px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
-      width: 100%;
-  }
-  
-  /* Create two columns that float next to eachother */
-  .column {
-    float: left;
+  .home-picture {
     width: 50%;
-    margin-top: 6px;
-    padding: 20px;
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
+}
 
-  @keyframes color-change {
-    0% {fill: #55A9A4;}
-    50% {fill: #385651;}
-    100% {fill: #384457;}
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .bird{
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
+/* Style inputs */
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #f2f2f280;
+  border: 1px solid;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+/* Style the container/contact section */
+.container-hero {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 300px 5px 300px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  width: 100%;
+}
+.container-title {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 166px 5px 70px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  width: 100%;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type='submit'] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #55a9a4;
+  }
+  50% {
+    fill: #385651;
+  }
+  100% {
+    fill: #384457;
+  }
+}
+
+.bird {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
