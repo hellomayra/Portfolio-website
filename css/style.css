@@ -9,6 +9,12 @@
   display: list-item;
 }
 
+/* .hamburger {
+  position: absolute;
+    right: 5px;
+    top: 20px;
+} */
+
 @media only screen and (min-width: 641px) {
   /* Show Menu List in Large Screen */
   .nav li:not(:last-child) {
